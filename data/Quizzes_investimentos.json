@@ -153,4 +153,9 @@
       "jovem": "Mostrar ícone de 'livre de impostos'.",
       "idoso": "Explicar como 'não precisa pagar imposto'.",
       "visual": "Narrar com metáfora de 'dinheiro limpo'.",
-      "auditivo": "Texto simplificado + Libras.",
+      "auditivo": "Texto simplificado + Libras."
+    },
+    "formato": "quiz com ícones de impostos",
+    "pontuacao": 15
+  }
+]
