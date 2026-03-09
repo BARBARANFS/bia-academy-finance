@@ -1,6 +1,7 @@
 [
   {
     "id": "jogo_001",
+    "publico": "iniciante",
     "tipo_jogo": "Historia Interativa + Metáforas",
     "descricao": "O usuário acompanha a história de Maria e precisa escolher metáforas que representam conceitos financeiros.",
     "cenario": "Maria quer aprender a investir de forma segura e acessível. Ao longo da história, ela enfrenta situações e precisa escolher metáforas que explicam conceitos financeiros.",
@@ -71,13 +72,7 @@
         }
       }
     ],
-    "publico_alvo": {
-      "jovem": "História gamificada com cores vibrantes.",
-      "idoso": "Narrativa simples e pausada, com metáforas do cotidiano.",
-      "visual": "Versão narrada em áudio com imagens mentais.",
-      "auditivo": "Texto simplificado + Libras.",
-      "neurodivergente": "Etapas curtas e previsíveis, com tópicos claros."
-    },
+    "resposta_adaptada": "História gamificada com metáforas financeiras, adaptada ao público jovem.",
     "formato": "história interativa com escolhas metafóricas",
     "pontuacao": 50
   }
