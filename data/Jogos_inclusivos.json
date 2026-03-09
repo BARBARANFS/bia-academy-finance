@@ -4,7 +4,7 @@
     "publico": "iniciante",
     "tipo_jogo": "Historia Interativa + Metáforas",
     "descricao": "O usuário acompanha a história de Maria e precisa escolher metáforas que representam conceitos financeiros.",
-    "cenario": "Maria quer aprender a investir de forma segura e acessível. Ao longo da história, ela enfrenta situações e precisa escolher metáforas que explicam conceitos financeiros.",
+    "contexto": "Maria quer aprender a investir de forma segura e acessível. Ao longo da história, ela enfrenta situações e precisa escolher metáforas que explicam conceitos financeiros.",
     "etapas": [
       {
         "pergunta": "Maria quer montar uma reserva de emergência. Qual metáfora representa melhor esse conceito?",
