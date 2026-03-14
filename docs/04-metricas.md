@@ -44,38 +44,57 @@ A avaliação foi realizada exclusivamente por meio de **testes estruturados**, 
 ### Teste 1: Conceito básico
 - **Pergunta:** "O que é inflação?"  
 - **Resposta esperada:** "Inflação é quando os preços sobem e o dinheiro perde valor. É como se você tivesse R$ 100 hoje e, no futuro, esse mesmo valor comprasse menos coisas."  
-- **Resultado:** [ ] Correto  [ ] Incorreto  
+- **Resultado:** [x] Correto  [ ] Incorreto  
 
 ---
 
 ### Teste 2: Conceito aplicado
 - **Pergunta:** "O que é reserva de emergência?"  
 - **Resposta esperada:** "Reserva de emergência é o dinheiro guardado para imprevistos, preferencialmente em aplicações de liquidez diária, como Tesouro Selic."  
-- **Resultado:** [ ] Correto  [ ] Incorreto  
+- **Resultado:** [x] Correto  [ ] Incorreto  
 
 ---
 
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** "Qual a previsão do tempo?"  
-- **Resposta esperada:** "Sou especializado em educação financeira e não tenho informações sobre previsão do tempo."  
-- **Resultado:** [ ] Correto  [ ] Incorreto  
+- **Resposta esperada:** "Eu sou a Bia Academy, uma educadora financeira. Só posso responder sobre investimentos e educação financeira."  
+- **Resultado:** [X] Correto  [ ] Incorreto  
 
 ---
 
 ### Teste 4: Informação inexistente
 - **Pergunta:** "Quanto rende o produto XYZ?"  
-- **Resposta esperada:** "Não tenho essa informação. Posso te explicar como avaliar investimentos disponíveis."  
-- **Resultado:** [ ] Correto  [ ] Incorreto  
+- **Resposta esperada:** "Eu não encontrei informações sobre esse produto nos materiais de apoio. Aqui estão os conceitos principais para avaliar investimentos."  
+- **Resultado:** [x] Correto  [ ] Incorreto  
 
 ---
 
 ### Teste 5: Inclusividade
-- **Pergunta:** "Explique liquidez para um jovem iniciante."  
+- **Pergunta:** "Explique liquidez para um iniciante."  
 - **Resposta esperada:** "Liquidez é a rapidez com que você consegue transformar um investimento em dinheiro. É como vender algo e receber o dinheiro na hora."  
-- **Resultado:** [ ] Correto  [ ] Incorreto  
+- **Resultado:** [x] Correto  [ ] Incorreto  
 
 ---
 
+### Teste 6: Inclusividade
+- **Pergunta:** Explique o que é reserva de emergência para um idoso?""  
+- **Resposta esperada:** "A reserva de emergência é como ter um guarda-chuva sempre pronto. Você não usa todos os dias, mas quando chove, ele traz segurança. Para um idoso, funciona como uma caixinha separada para despesas inesperadas, como remédios ou manutenção da casa. Esse dinheiro deve estar em aplicações seguras e fáceis de acessar, para dar tranquilidade em qualquer imprevisto."  
+- **Resultado:** [x] Correto  [ ] Incorreto  
+
+---
+### Teste 7: Inclusividade
+- **Pergunta:** "Explique a deficiente auditivo, o que significa liquidez nos investimentos?"  
+- **Resposta esperada:** "Liquidez é a rapidez com que você consegue transformar um investimento em dinheiro. É como ter dinheiro no cartão de débito: você pode usar a qualquer momento. Alguns investimentos são como torneiras que abrem rápido, outros como poços que demoram para liberar a água. Essa diferença ajuda a planejar melhor quando e como você poderá usar seus recursos."  
+- **Resultado:** [x] Correto  [ ] Incorreto  
+
+---
+
+### Teste 8: Inclusividade
+- **Pergunta:** "Explique a um neurodivergente, o que é diversificação?"  
+- **Resposta esperada:** "Diversificação é como montar um quebra-cabeça. Você não compra só uma peça, mas várias, para ter uma coleção completa. Nos investimentos, isso significa distribuir o dinheiro em diferentes opções: parte em aplicações seguras como Tesouro Direto, uma fatia em ações ou fundos para crescimento, e diversificar setores como tecnologia, alimentos e energia. Assim, mesmo que uma peça não se encaixe bem, o restante do quebra-cabeça continua funcionando e trazendo equilíbrio."  
+- **Resultado:** [x] Correto  [ ] Incorreto
+
+---  
 ## Resultados
 
 Após os testes, registre suas conclusões:
