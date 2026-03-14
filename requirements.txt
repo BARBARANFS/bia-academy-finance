@@ -1,6 +1,8 @@
-streamlit
-fastapi
-uvicorn
-requests
-pandas
-python-dotenv
+streamlit==1.54.0
+
+# Opcionais (para expansão futura, remova se não for usar agora):
+# fastapi==0.115.0       # Para expor a BIA Academy como API
+# uvicorn==0.30.0        # Servidor ASGI para rodar FastAPI
+# requests==2.32.3       # Para consumir APIs externas (ex.: Banco Central)
+# pandas==2.2.3          # Para manipulação avançada de dados tabulares (CSV, Excel)
+# python-dotenv==1.0.1   # Para carregar variáveis de ambiente de um arquivo .env
