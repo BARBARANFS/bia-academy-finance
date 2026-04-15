@@ -78,7 +78,7 @@ A avaliação foi realizada exclusivamente por meio de **testes estruturados**, 
 
 ### Teste 6: Inclusividade
 - **Pergunta:** Explique o que é reserva de emergência para um idoso?""  
-- **Resposta esperada:** "A reserva de emergência é como ter um guarda-chuva sempre pronto. Você não usa todos os dias, mas quando chove, ele traz segurança. Para um idoso, funciona como uma caixinha separada para despesas inesperadas, como remédios ou manutenção da casa. Esse dinheiro deve estar em aplicações seguras e fáceis de acessar, para dar tranquilidade em qualquer imprevisto."  
+- **Resposta esperada:** "A reserva de emergência é como uma proteção para imprevistos. É um dinheiro guardado para quando algo inesperado acontecer, como um conserto na casa ou uma doença."  
 - **Resultado:** [x] Correto  [ ] Incorreto  
 
 ---
