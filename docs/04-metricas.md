@@ -64,7 +64,7 @@ A avaliação foi realizada exclusivamente por meio de **testes estruturados**, 
 
 ### Teste 4: Informação inexistente
 - **Pergunta:** "Quanto rende o produto XYZ?"  
-- **Resposta esperada:** "Eu não encontrei informações sobre esse produto nos materiais de apoio. Aqui estão os conceitos principais para avaliar investimentos."  
+- **Resposta esperada:** "Eu não encontrei informações sobre esse produto nos materiais de apoio. Recomendo que verifique no site da CVM ou no da B3."  
 - **Resultado:** [x] Correto  [ ] Incorreto  
 
 ---
