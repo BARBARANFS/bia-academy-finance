@@ -25,7 +25,7 @@ A avaliação foi realizada exclusivamente por meio de **testes estruturados**, 
 ### Coerência
 **O que avalia:** Se a resposta está alinhada ao perfil do público.  
 **Pergunta:** Explique reserva de emergência para um idoso.  
-**Resposta:** Reserva de emergência é como um cofre para imprevistos.  
+**Resposta:** A reserva de emergência é como uma proteção para imprevistos. É um dinheiro guardado para quando algo inesperado acontecer, como um conserto na casa ou uma doença.  
 
 ---
 
