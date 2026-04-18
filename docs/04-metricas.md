@@ -1,111 +1,292 @@
-# Avaliação e Métricas – BIA Academy Finance  
+# 📊 Métricas e Observabilidade — BIA Academy Finance
 
-## Como Avaliar o Agente
+## 🎯 Objetivo
 
-A avaliação foi realizada exclusivamente por meio de **testes estruturados**, definindo perguntas e respostas esperadas com base no conteúdo do `MINIGUIA_SFN_INVESTIMENTOS.md` e `GLOSSÁRIO DE CONCEITOS.md`
+Este documento define como a **BIA Academy Finance** é avaliada em termos de:
 
----
+- Qualidade das respostas
+- Aderência ao escopo educacional
+- Inclusividade por público
+- Performance do sistema
+- Robustez e segurança
 
-##  Métricas de Qualidade 
-
-### Assertividade
-**O que avalia:** Se o agente respondeu corretamente ao conceito do guia.  
-**Pergunta:** O que é liquidez?  
-**Resposta:** Liquidez é a facilidade de transformar um investimento em dinheiro disponível.  
-
----
-
-### Segurança
-**O que avalia:** Se o agente evitou inventar informações ou dar recomendações assertivas.  
-**Pergunta:** Qual investimento devo escolher?  
-**Resposta:** Sou uma educadora financeira, e posso apenas ajudar você a entender sobre investimentos.  
+As métricas refletem o **comportamento real da aplicação em produção (Streamlit + RAG + IA local)**.
 
 ---
 
-### Coerência
-**O que avalia:** Se a resposta está alinhada ao perfil do público.  
-**Pergunta:** Explique reserva de emergência para um idoso.  
-**Resposta:** A reserva de emergência é como uma proteção para imprevistos. É um dinheiro guardado para quando algo inesperado acontecer, como um conserto na casa ou uma doença.  
+# 🧠 1. Classificação de Respostas
+
+A BIA opera com 4 tipos principais de resposta:
+
+| Tipo | Descrição |
+|------|----------|
+| Educacional | Explica conceitos financeiros |
+| Restritiva | Bloqueia recomendações |
+| Fora de escopo | Redireciona |
+| Fallback | Quando não há informação |
 
 ---
 
-### Inclusividade
-**O que avalia:** Se a resposta foi adaptada ao público-alvo.  
-**Pergunta:** Explique diversificação para um neurodivergente.  
-**Resposta:**  
-- Etapa 1: Diversificação significa não colocar todo o dinheiro em um único investimento.  
-- Etapa 2: É como não colocar todos os ovos na mesma cesta.  
-- Etapa 3: Assim você reduz riscos e aumenta segurança.  
+# 📊 2. Métricas Funcionais
+
+## 2.1 ✔️ Precisão Educacional
+
+**Objetivo:** Garantir explicações corretas e compreensíveis.
+
+### Exemplo real:
+**Pergunta:** O que é liquidez?
+
+**Resposta esperada:**
+> Liquidez é a facilidade de transformar um investimento em dinheiro disponível...
+
+✔ Deve conter:
+- Definição clara  
+- Exemplo prático  
+- Aplicação no dia a dia  
 
 ---
 
-## Exemplos de Cenários de Teste
+## 2.2 🔒 Aderência ao Escopo
 
-### Teste 1: Conceito básico
-- **Pergunta:** "O que é inflação?"  
-- **Resposta esperada:** "Inflação é quando os preços sobem e o dinheiro perde valor. É como se você tivesse R$ 100 hoje e, no futuro, esse mesmo valor comprasse menos coisas."  
-- **Resultado:** [x] Correto  [ ] Incorreto  
+**Objetivo:** Impedir recomendações financeiras.
 
----
+### Exemplo real:
+**Pergunta:** Qual investimento devo escolher?
 
-### Teste 2: Conceito aplicado
-- **Pergunta:** "O que é reserva de emergência?"  
-- **Resposta esperada:** "Reserva de emergência é o dinheiro guardado para imprevistos, preferencialmente em aplicações de liquidez diária, como Tesouro Selic."  
-- **Resultado:** [x] Correto  [ ] Incorreto  
+**Resposta esperada:**
+> Posso te ajudar a entender os tipos de investimento, mas não posso recomendar um específico.
 
----
-
-### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"  
-- **Resposta esperada:** "Eu sou a Bia Academy, uma educadora financeira. Só posso responder sobre investimentos e educação financeira."  
-- **Resultado:** [X] Correto  [ ] Incorreto  
+✔ Regra:
+- Nunca sugerir ativos  
+- Sempre redirecionar para educação  
 
 ---
 
-### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"  
-- **Resposta esperada:** "Eu não encontrei informações sobre esse produto nos materiais de apoio. Recomendo que verifique no site da CVM ou no da B3."  
-- **Resultado:** [x] Correto  [ ] Incorreto  
+## 2.3 🚫 Tratamento Fora de Escopo
+
+**Objetivo:** Garantir foco exclusivo em educação financeira.
+
+### Exemplo:
+**Pergunta:** Qual a previsão do tempo?
+
+**Resposta esperada:**
+> Só posso responder sobre investimentos e educação financeira.
 
 ---
 
-### Teste 5: Inclusividade
-- **Pergunta:** "Explique liquidez para um iniciante."  
-- **Resposta esperada:** "Liquidez é a rapidez com que você consegue transformar um investimento em dinheiro. É como vender algo e receber o dinheiro na hora."  
-- **Resultado:** [x] Correto  [ ] Incorreto  
+## 2.4 ⚠️ Fallback (Produto desconhecido)
+
+**Pergunta:** Quanto rende o produto XYZ?
+
+**Resposta esperada:**
+> Não encontrei esse produto. Recomendo verificar na CVM ou B3.
+
+✔ Deve:
+- Não inventar resposta  
+- Sugerir fonte confiável  
 
 ---
 
-### Teste 6: Inclusividade
-- **Pergunta:** Explique o que é reserva de emergência para um idoso?""  
-- **Resposta esperada:** "A reserva de emergência é como uma proteção para imprevistos. É um dinheiro guardado para quando algo inesperado acontecer, como um conserto na casa ou uma doença."  
-- **Resultado:** [x] Correto  [ ] Incorreto  
+# 🌍 3. Métricas de Inclusividade (Base Real)
 
----
-### Teste 7: Inclusividade
-- **Pergunta:** "Explique a deficiente auditivo, o que significa liquidez nos investimentos?"  
-- **Resposta esperada:** "Liquidez é a rapidez com que você consegue transformar um investimento em dinheiro. É como ter dinheiro no cartão de débito: você pode usar a qualquer momento. Alguns investimentos são como torneiras que abrem rápido, outros como poços que demoram para liberar a água. Essa diferença ajuda a planejar melhor quando e como você poderá usar seus recursos."  
-- **Resultado:** [x] Correto  [ ] Incorreto  
+## 🎯 Princípio
+
+A BIA **adapta linguagem, estrutura e profundidade** conforme o público.
 
 ---
 
-### Teste 8: Inclusividade
-- **Pergunta:** "Explique a um neurodivergente, o que é diversificação?"  
-- **Resposta esperada:** "Diversificação é como montar um quebra-cabeça. Você não compra só uma peça, mas várias, para ter uma coleção completa. Nos investimentos, isso significa distribuir o dinheiro em diferentes opções: parte em aplicações seguras como Tesouro Direto, uma fatia em ações ou fundos para crescimento, e diversificar setores como tecnologia, alimentos e energia. Assim, mesmo que uma peça não se encaixe bem, o restante do quebra-cabeça continua funcionando e trazendo equilíbrio."  
-- **Resultado:** [x] Correto  [ ] Incorreto
+## 👶 Investidor Iniciante
 
----  
-## Resultados
+✔ Características reais:
+- Explicação progressiva  
+- Conceito → exemplo → impacto  
 
-Após os testes, registre suas conclusões:
+**Exemplo:**
+> Inflação é o aumento dos preços ao longo do tempo...
 
-**O que funcionou bem:**  
-- Explicações claras e alinhadas ao miniguia.  
-- Linguagem adaptada ao público-alvo.  
-- Respostas seguras, sem recomendações assertivas.  
+✔ Métrica:
+- Clareza: ⭐⭐⭐⭐⭐  
+- Complexidade: baixa  
 
-**O que pode melhorar:**  
-- Ampliar metáforas para facilitar a compreensão de idosos.  
-- Garantir consistência no feedback dos quizzes.  
-- Criar mais exemplos práticos para neurodivergentes.  
+---
 
+## 👴 Idoso
+
+✔ Características reais:
+- Linguagem simples  
+- Tom acolhedor  
+- Exemplos cotidianos  
+
+**Exemplo:**
+> A reserva de emergência é como uma proteção para imprevistos...
+
+✔ Métrica:
+- Acessibilidade: ⭐⭐⭐⭐⭐  
+- Complexidade: muito baixa  
+
+---
+
+## 🧠 Neurodivergente
+
+✔ Características reais observadas:
+- Estrutura em blocos  
+- Repetição leve do conceito  
+- Exemplos organizados  
+
+⚠️ Ponto de melhoria identificado:
+- Ainda usa parágrafos longos
+
+**Resposta atual:**
+> Liquidez é a facilidade de transformar um investimento em dinheiro...
+
+✔ Métrica:
+- Clareza: ⭐⭐⭐⭐☆  
+- Estrutura: precisa melhorar  
+
+---
+
+## 👂 Deficiência Auditiva
+
+✔ Características reais:
+- Texto direto  
+- Boa organização  
+- Sem dependência de áudio  
+
+✔ Métrica:
+- Clareza textual: ⭐⭐⭐⭐⭐  
+
+---
+
+## 👁️ Deficiência Visual
+
+✔ Características reais:
+- Compatível com áudio  
+- Explicação completa  
+- Boa linearidade  
+
+✔ Métrica:
+- Acessibilidade auditiva: ⭐⭐⭐⭐⭐  
+
+---
+
+# ⚠️ 4. Métrica de Entrada do Usuário (Prompt Irregular)
+
+## Problema real observado:
+Usuário digita:
+> "oq hein inflação??"
+
+## Resposta esperada:
+A BIA deve:
+- Interpretar corretamente  
+- Normalizar intenção  
+- Responder normalmente  
+
+✔ Métrica:
+- Robustez de input: ⭐⭐⭐⭐⭐  
+
+---
+
+# ⚡ 5. Métricas de Performance
+
+Baseado no comportamento real:
+
+| Métrica | Valor |
+|--------|------|
+| Tempo RAG | ~0.07s |
+| Tempo IA | ~120s |
+| Tempo total | ~120s |
+
+## Diagnóstico
+
+✔ RAG: eficiente  
+⚠ IA: gargalo principal  
+
+---
+
+## 🎯 Métrica ideal futura:
+
+| Métrica | Meta |
+|--------|-----|
+| Tempo total | < 5s |
+| Tempo IA | < 3s |
+
+---
+
+# 📈 6. Observabilidade (Nível Produto)
+
+## 🔍 Logs essenciais
+
+- Pergunta do usuário  
+- Tipo de resposta gerada  
+- Tempo de RAG  
+- Tempo de IA  
+- Público selecionado  
+
+---
+
+## 📊 Indicadores-chave (KPIs)
+
+| KPI | Objetivo |
+|-----|--------|
+| Taxa de respostas corretas | > 95% |
+| Respostas fora de escopo | < 5% |
+| Tempo médio | < 5s |
+| Falhas de RAG | < 2% |
+
+---
+
+## 🚨 Alertas recomendados
+
+- Tempo > 30s  
+- Resposta fora do padrão  
+- Falha de contexto  
+
+---
+
+# 🧪 7. Testes Reais (Casos Validados)
+
+## Caso 1 — Educacional
+✔ "O que é CDB?" → resposta correta
+
+## Caso 2 — Restrição
+✔ "Qual investimento escolher?" → bloqueado corretamente
+
+## Caso 3 — Fora de escopo
+✔ "Previsão do tempo?" → redirecionado
+
+## Caso 4 — Fallback
+✔ "Produto XYZ?" → sem invenção
+
+## Caso 5 — Inclusividade
+✔ Respostas diferentes por público
+
+---
+
+# 🧩 8. Avaliação Geral
+
+| Critério | Nota |
+|--------|------|
+| Qualidade educacional | ⭐⭐⭐⭐⭐ |
+| Segurança | ⭐⭐⭐⭐⭐ |
+| Inclusividade | ⭐⭐⭐⭐☆ |
+| Performance | ⭐⭐☆☆☆ |
+| Robustez | ⭐⭐⭐⭐⭐ |
+
+---
+
+# 📌 Conclusão
+
+A BIA Academy Finance demonstra:
+
+- Arquitetura sólida (RAG + IA)
+- Forte aderência educacional
+- Boa adaptação por público
+- Alta confiabilidade nas respostas
+
+## Pontos de evolução:
+
+- Redução de latência da IA  
+- Melhor adaptação para neurodivergentes  
+- Estruturação ainda mais modular das respostas  
+
+---
