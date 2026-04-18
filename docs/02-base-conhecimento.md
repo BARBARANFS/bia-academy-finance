@@ -1,90 +1,123 @@
-# Base de Conhecimento
+# 📚 Base de Conhecimento — BIA Academy Finance
 
-## Dados Utilizados
+## 🎯 Visão Geral
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
+A base de conhecimento da **BIA Academy Finance** sustenta todas as respostas educacionais do sistema, garantindo clareza, confiabilidade e acessibilidade.
 
-| Arquivo | Formato | Utilização no Agente |
-|---------|---------|---------------------|
-| `MINIGUIA_SFN_INVESTIMENTOS.md` | MD |Doc. base da pesquisa, estruturando toda a lógica dos jogos inclusivos. |
-| `GLOSSÁRIO DE CONCEITOS.md` | MD | Suporte didático para simplificar termos técnicos |
-| `Quizzes_investimentos.json` | JSON | Quizzes com feedback explicativo adequados ao perfil |
-| `Jogos_inclusivos.json` | JSON | Jogos narrativos e metáforas adaptadas a diferentes públicos (jovens, idosos, pessoas com deficiência visual/auditiva e           neurodivergentes).|
-|`historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+A arquitetura foi projetada para oferecer explicações financeiras de forma **simples, segura e adaptada ao perfil do usuário**, utilizando inteligência artificial e dados estruturados.
 
 ---
 
-## Adaptações nos Dados
+## 🗂️ Dados Utilizados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
+Os dados são armazenados localmente na pasta `data` e organizados da seguinte forma:
 
-Foram introduzidos novos dados para expandir o escopo do projeto idealizado e assim, dando continuidade prática ao Miniguia_SFN_Investimentos, projeto desenvolviso no Notebook LM, no qual foi o primeiro Desafio_DIO no bootcamp Bradesco - GenAI & Dados, e logo, é a base deste projeto. 
-
-* MINIGUIA_SFN_INVESTIMENTOS.md: base da pesquisa.
-* GLOSSÁRIO DE CONCEITOS.md: suporte didático 
-* Quizzes_investimentos.json: método para inclusão e ensino didático e dinâmico focando cada perfil
-* Jogos_inclusivos.json: jogos narrativos e metáforas adaptadas a diferentes públicos (jovens, idosos, pessoas com deficiência visual/auditiva e neurodivergentes)
-
-Foram mantidos sem alterações:
-* historico_atendimento.csv
-* transacoes.csv
----
-
-## Estratégia de Integração
-
-### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
-
-Os arquivos JSON/Markdown criados e os CSV originais são carregados no início da sessão. E, o agente acessa dinamicamente os dados conforme o perfil/público-alvo do usuário.
-
-### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
-
-Os dados não são inseridos diretamente no system prompt. Eles são consultados dinamicamente:
-
-### Exemplo de como funciona
-
-Usuário: "O que é liquidez?"
-
-Agente consulta:
-- GLOSSÁRIO DE CONCEITOS.md → definição de liquidez
-- MINIGUIA_SFN_INVESTIMENTOS.md → reforço conceitual
-
-Resposta do agente:
-"Liquidez é a facilidade de transformar um investimento em dinheiro disponível. Por exemplo, o Tesouro Selic tem liquidez diária, o que significa que você pode resgatar o valor a qualquer momento."
+| Arquivo                         | Formato  | Utilização                            |
+| ------------------------------- | -------- | ------------------------------------- |
+| `MINIGUIA_SFN_INVESTIMENTOS.md` | Markdown | Base conceitual principal             |
+| `GLOSSÁRIO DE CONCEITOS.md`     | Markdown | Simplificação de termos técnicos      |
+| `Quizzes_investimentos.json`    | JSON     | Perguntas educativas com feedback     |
+| `Jogos_inclusivos.json`         | JSON     | Narrativas interativas e aprendizagem |
 
 ---
 
-## Exemplo de Contexto Montado
+## 🧠 Arquitetura
 
-> Mostre um exemplo de como os dados são formatados para o agente.
+A BIA utiliza uma arquitetura híbrida composta por três componentes principais:
 
-```
-### Dados do Cliente
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+* **Biblioteca interna** → respostas rápidas e fallback
+* **RAG (busca semântica)** → recuperação de conteúdo relevante
+* **LLM (Ollama)** → geração da resposta final
 
-### Últimas Transações (transacoes.csv)
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-- 05/11: Farmácia - R$ 120
+Esses componentes trabalham juntos para gerar respostas **contextualizadas, didáticas e seguras**.
 
-### Conceito (GLOSSÁRIO DE CONCEITOS.md)
-- Liquidez: Facilidade de transformar um investimento em dinheiro disponível.
+---
 
-### Quiz (Quizzes_investimentos.json)
-Pergunta: Qual investimento tem liquidez diária?
-Opções:  
-A) Tesouro Selic  
-B) LCI com carência de 90 dias  
-C) Ações  
-Resposta correta: A) Tesouro Selic  
-Feedback: O Tesouro Selic permite resgate diário, ideal para reserva de emergência.
+## 🔄 Fluxo da Resposta
 
-### Jogo Narrativo (Jogos_inclusivos.json)
-Contexto: Idoso pergunta sobre reserva de emergência.  
-Resposta adaptada: "Imagine um cofre para imprevistos. O Tesouro Selic funciona como esse cofre, pois você pode acessar o dinheiro a qualquer momento."
+1. Usuário envia a pergunta
+2. Identificação do perfil do usuário
+3. Consulta na biblioteca interna
+4. Busca de contexto via RAG
+5. Combinação das informações
+6. Geração da resposta pelo modelo de IA
+7. Adaptação da linguagem ao perfil
+8. Retorno da resposta
 
-```
+---
+
+## 🧪 Módulos do Sistema
+
+### 💬 Chat
+
+* Respostas dinâmicas com RAG + IA
+* Explicações adaptadas ao usuário
+
+### 🧠 Quiz
+
+* Baseado em `Quizzes_investimentos.json`
+* Feedback educativo com apoio da IA
+
+### 🎮 Jogo
+
+* Baseado em `Jogos_inclusivos.json`
+* Aprendizado por decisões e progressão
+
+---
+
+## 🎯 Personalização
+
+A BIA adapta automaticamente as respostas conforme o perfil do usuário:
+
+* Investidor iniciante
+* Idosos
+* Deficiência visual (com áudio)
+* Deficiência auditiva
+* Neurodivergentes
+
+A adaptação ocorre por meio de:
+
+* Linguagem
+* Estrutura da explicação
+* Exemplos utilizados
+
+---
+
+## 🔒 Limitações
+
+A BIA Academy Finance é uma ferramenta educacional e possui restrições:
+
+* Não recomenda investimentos
+* Não faz previsões de mercado
+* Não analisa ativos específicos
+
+### 🚫 Casos Bloqueados
+
+| Tipo de Pergunta     | Comportamento               |
+| -------------------- | --------------------------- |
+| Recomendação         | Resposta bloqueada          |
+| Fora do escopo       | Redirecionamento            |
+| Produto desconhecido | Sugestão de fontes externas |
+
+---
+
+## 🧩 Inclusão
+
+O sistema foi projetado para ser inclusivo, garantindo acesso ao aprendizado financeiro para diferentes perfis, com foco em:
+
+* Clareza
+* Acessibilidade
+* Didática
+
+---
+
+## 📌 Conclusão
+
+A base de conhecimento da **BIA Academy Finance** foi projetada como um sistema:
+
+* Simples
+* Eficiente
+* Seguro
+* Inclusivo
+
+Garantindo educação financeira acessível e adaptada a diferentes públicos.
