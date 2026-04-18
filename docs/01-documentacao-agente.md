@@ -1,328 +1,406 @@
-# 🤖 Documentação do Agente — BIA Academy Finance
-
-## 🎯 Objetivo
-
-A **BIA Academy Finance** é um agente de IA educacional focado em **educação financeira**, projetado para:
-
-- Ensinar conceitos de investimentos de forma clara
-- Adaptar a linguagem conforme o perfil do usuário
-- Garantir segurança (sem recomendações financeiras)
-- Operar com base em contexto real (RAG)
-
-O sistema combina:
-
-> **Interface (Streamlit) + IA local (Ollama) + Base de conhecimento (RAG) + Regras de negócio**
+Perfeito — agora vamos elevar isso para **nível enterprise de verdade**.
+Aqui não é só “bonito pra GitHub”, é documento com visão de **produto, escala e negócio**.
 
 ---
 
-# 🧠 1. Funcionamento do Agente
-
-## 🔄 Fluxo de execução
-
-### Etapas:
-
-1. Usuário envia pergunta
-2. Sistema classifica o tipo de pergunta
-3. RAG busca contexto relevante
-4. IA gera resposta base
-5. Resposta é adaptada ao público
-6. Resposta final é exibida + áudio
+# 🚀 BIA Academy Finance — Documentação Enterprise
 
 ---
 
-# 🧩 2. Arquitetura do Sistema
+# 1. Visão do Produto
 
-## 📦 Componentes
+## 📌 Descrição
 
-| Camada | Tecnologia | Função |
-|--------|-----------|--------|
-| Interface | Streamlit | Interação com usuário |
-| IA | Ollama (LLM local) | Geração de respostas |
-| Base | Markdown + JSON | Conteúdo educacional |
-| RAG | Indexação semântica | Recuperação de contexto |
-| Regras | Python (app.py) | Controle de comportamento |
+A **BIA Academy Finance** é uma plataforma educacional inteligente que utiliza **IA, gamificação e acessibilidade adaptativa** para ensinar educação financeira de forma personalizada, progressiva e inclusiva.
 
 ---
 
-# 🧠 3. Classificação de Perguntas
+## 🎯 Proposta de Valor
 
-A BIA classifica automaticamente a intenção do usuário:
-
-| Tipo | Comportamento |
-|------|-------------|
-| Educacional | Explica conceitos financeiros |
-| Restritiva | Bloqueia recomendações |
-| Fora de escopo | Redireciona |
-| Fallback | Responde ausência de informação |
+> Transformar aprendizado financeiro em uma experiência **interativa, acessível e orientada por IA**, sem expor o usuário a riscos ou recomendações indevidas.
 
 ---
 
-## 📌 Exemplos reais
+## 🧠 Diferencial Competitivo
 
-### ✔ Educacional
-**Pergunta:**
-> O que é liquidez?
-
-**Resposta:**
-Explica conceito + exemplo + aplicação
+* IA contextual com **RAG local (baixo custo)**
+* **Gamificação real** (não superficial)
+* Inclusão nativa (não como “feature extra”)
+* Aprendizado baseado em **decisão + erro + reforço**
 
 ---
 
-### 🔒 Restritiva
-**Pergunta:**
-> Qual investimento devo escolher?
+# 2. Problema de Mercado
 
-**Resposta:**
-> Posso te ajudar a entender, mas não posso recomendar um investimento específico.
+## 🔴 Dores do usuário
 
----
-
-### 🚫 Fora de escopo
-**Pergunta:**
-> Qual a previsão do tempo?
-
-**Resposta:**
-> Só posso responder sobre investimentos e educação financeira.
+* Não entende termos financeiros
+* Medo de investir
+* Conteúdo técnico e inacessível
+* Falta de personalização
+* Baixa retenção em educação financeira
 
 ---
 
-### ⚠️ Fallback
-**Pergunta:**
-> Quanto rende o produto XYZ?
+## 💡 Oportunidade
 
-**Resposta:**
-> Não encontrei esse produto. Recomendo verificar na CVM ou B3.
+Crescimento de:
 
----
-
-# 🎯 4. Regras de Negócio (Core do Agente)
-
-## 🔐 Segurança
-
-A BIA:
-
-- ❌ NÃO recomenda investimentos
-- ❌ NÃO sugere ativos específicos
-- ❌ NÃO faz previsões de mercado
+* Open Banking
+* Educação financeira obrigatória
+* Plataformas edtech
+* Inclusão digital
 
 ---
 
-## ✅ O que ela faz
+# 3. Solução
 
-- ✔ Explica conceitos financeiros
-- ✔ Ensina boas práticas
-- ✔ Usa exemplos do dia a dia
-- ✔ Orienta sem induzir decisão
+A BIA atua como:
 
----
-
-# 🌍 5. Adaptação por Público (Inclusividade Real)
-
-A BIA adapta a resposta conforme o público selecionado no sistema.
+> 🧠 **Mentora Financeira Inteligente + Sistema Educacional Gamificado**
 
 ---
 
-## 👶 Investidor Iniciante
+## 🔧 Como resolve
 
-**Características:**
-- Explicação progressiva
-- Conceito → exemplo → impacto
-
-**Exemplo:**
-> Inflação é o aumento dos preços ao longo do tempo...
-
----
-
-## 👴 Idoso
-
-**Características:**
-- Linguagem simples
-- Tom acolhedor
-- Exemplos cotidianos
-
-**Exemplo:**
-> A reserva de emergência é como uma proteção para imprevistos...
+* Explica conceitos com IA contextual
+* Avalia respostas do usuário
+* Corrige e melhora explicações automaticamente
+* Evolui o usuário por fases
+* Adapta comunicação por perfil
 
 ---
 
-## 🧠 Neurodivergente
+# 4. Arquitetura do Sistema
 
-**Características reais:**
-- Estrutura em blocos
-- Explicação sequencial
-- Reforço leve do conceito
+```mermaid
+flowchart TD
+    A[Usuário] --> B[Frontend - Streamlit]
 
-**Observação:**
-Ainda pode melhorar em:
-- Redução de parágrafos longos
+    B --> C[Camada de Orquestração]
 
----
+    C --> D[Chat IA]
+    C --> E[Quiz Engine]
+    C --> F[Game Engine]
 
-## 👂 Deficiência Auditiva
+    D --> G[LLM Local - Ollama]
+    G --> H[RAG - Base Conhecimento]
 
-**Características:**
-- Comunicação 100% textual
-- Clareza direta
-- Sem dependência de áudio
+    E --> I[Avaliação Resposta]
+    I --> J[Refinamento IA]
 
----
+    F --> K[Motor de Fases]
+    K --> L[Conquistas]
+    K --> M[Ranking]
 
-## 👁️ Deficiência Visual
+    C --> N[Perfil Usuário]
+    N --> O[Adaptador de Linguagem]
 
-**Características:**
-- Compatível com leitura em voz
-- Estrutura linear
-- Conteúdo completo
-
----
-
-# 🎧 6. Geração de Áudio
-
-A BIA gera automaticamente áudio das respostas.
-
-## Objetivo:
-- Acessibilidade
-- Inclusão (principalmente deficiência visual)
-- Melhor experiência do usuário
+    O --> D
+    O --> E
+    O --> F
+```
 
 ---
 
-# ⚙️ 7. Base de Conhecimento (RAG)
+# 5. Arquitetura Técnica (Detalhada)
 
-## 📚 Estrutura
+## 🧱 Camadas
 
-A base contém:
+### 1. Interface (Frontend)
 
-- Conceitos financeiros
-- Explicações estruturadas
-- Exemplos práticos
+* Streamlit
+* Componentes:
 
----
-
-## 🔎 Funcionamento
-
-1. Pergunta do usuário é processada
-2. Sistema busca conteúdo relevante
-3. IA responde com base nesse contexto
+  * Chat
+  * Quiz
+  * Jogo
+  * HUD (pontuação, nível)
 
 ---
 
-## ✔ Benefícios
+### 2. Orquestração
 
-- Evita alucinação
-- Garante consistência
-- Usa conteúdo validado
+Responsável por:
 
----
-
-# ⚠️ 8. Tratamento de Entrada do Usuário
-
-A BIA é robusta para entradas imperfeitas.
-
-## Exemplo real:
-
-**Entrada:**
-> oq hein inflação??
-
-**Comportamento:**
-- Interpreta corretamente
-- Normaliza intenção
-- Responde normalmente
+* Gerenciar estado (`session_state`)
+* Direcionar fluxo (chat, quiz, jogo)
+* Aplicar regras de negócio
 
 ---
 
-# ⚡ 9. Performance do Sistema
+### 3. IA (Core)
 
-## 📊 Estado atual
+#### LLM Local
 
-| Métrica | Valor |
-|--------|------|
-| Tempo RAG | ~0.07s |
-| Tempo IA | ~120s |
-| Tempo total | ~120s |
+* Modelos via **Ollama**
+* Exemplos:
 
----
+  * phi3
+  * gemma
 
-## 📉 Diagnóstico
+#### RAG
 
-- ✔ RAG eficiente
-- ⚠ IA é gargalo principal
+* Busca contexto em:
 
----
-
-## 🎯 Meta ideal
-
-| Métrica | Objetivo |
-|--------|---------|
-| Tempo total | < 5s |
-| Tempo IA | < 3s |
+  * JSON
+  * documentos locais
 
 ---
 
-# 📊 10. Observabilidade
+### 4. Motores
 
-## 🔍 Logs recomendados
+#### 🧠 Quiz Engine
 
-- Pergunta do usuário
-- Tipo de resposta
-- Tempo de resposta
-- Público selecionado
+* Avaliação de resposta
+* Geração de explicação
+* Melhoria automática
 
----
+#### 🎮 Game Engine
 
-## 📈 KPIs
-
-| KPI | Objetivo |
-|-----|--------|
-| Precisão | > 95% |
-| Tempo médio | < 5s |
-| Respostas fora de escopo | < 5% |
-| Falhas de RAG | < 2% |
+* Sistema de fases
+* Dificuldade adaptativa
+* Progressão
 
 ---
 
-## 🚨 Alertas
+### 5. Sistema de Progressão
 
-- Tempo > 30s
-- Falha de resposta
-- Resposta fora do padrão
-
----
-
-# 🧪 11. Casos de Teste Reais
-
-✔ Educacional  
-✔ Restrição  
-✔ Fora de escopo  
-✔ Fallback  
-✔ Inclusividade por público  
+* Pontuação global
+* Nível
+* Conquistas
+* Ranking
 
 ---
 
-# 🧩 12. Limitações Atuais
+# 6. Modelo de Dados
 
-- Tempo de resposta elevado (IA local)
-- Neurodivergente ainda pode melhorar estrutura
-- Dependência de qualidade da base RAG
+## 📦 Estrutura Atual
 
----
+### Quiz
 
-# 🚀 13. Roadmap de Evolução
-
-- Redução de latência
-- Melhor estrutura para acessibilidade cognitiva
-- Expansão da base de conhecimento
-- Monitoramento em tempo real
+* pergunta
+* opcoes
+* resposta_correta
 
 ---
 
-# 📌 Conclusão
+### Jogo
 
-A **BIA Academy Finance** é um agente de IA educacional com:
-
-- Arquitetura sólida (RAG + IA local)
-- Forte controle de segurança
-- Alta qualidade educacional
-- Inclusividade real por público
+* fases (hardcoded)
+* pontos
+* progressão
 
 ---
+
+## 🚀 Estrutura Enterprise (recomendada)
+
+### Usuário
+
+```json
+{
+  "id": "user_001",
+  "publico": "iniciante",
+  "pontuacao": 120,
+  "nivel": "Avançado",
+  "historico_respostas": []
+}
+```
+
+---
+
+### Progresso
+
+```json
+{
+  "fase_atual": 2,
+  "conquistas": ["Primeira conquista"],
+  "ranking_score": 120
+}
+```
+
+---
+
+# 7. Inteligência do Sistema
+
+## 🧠 Pipeline de Resposta
+
+1. Usuário responde
+2. IA gera explicação
+3. Sistema avalia qualidade
+4. Se necessário → simplifica
+5. Adapta ao público
+6. Entrega resposta final
+
+---
+
+## 🔍 Avaliação Automática
+
+Critérios:
+
+* Clareza
+* Assertividade
+* Acessibilidade
+
+---
+
+# 8. Gamificação (Core do Produto)
+
+## 🎮 Elementos
+
+* Pontuação
+* Nível
+* Fases
+* Conquistas
+* Ranking
+
+---
+
+## 🔁 Loop de Engajamento
+
+1. Usuário responde
+2. Recebe feedback
+3. Ganha pontos
+4. Evolui nível
+5. Desbloqueia fases
+6. Continua aprendendo
+
+---
+
+# 9. Acessibilidade (Diferencial Estratégico)
+
+## ♿ Adaptação Dinâmica
+
+Baseado em:
+
+* público selecionado
+
+---
+
+## 🎯 Estratégias
+
+* Simplificação textual
+* Estrutura por tópicos
+* Metáforas
+* Narrativas
+* Clareza progressiva
+
+---
+
+# 10. Segurança e Compliance
+
+## 🔒 Diretrizes
+
+* Não recomenda investimentos
+* Não acessa dados sensíveis
+* Não faz promessas financeiras
+
+---
+
+## 🛡 Anti-alucinação
+
+* Uso de RAG
+* Limitação de contexto
+* Mensagens de fallback
+
+---
+
+# 11. Métricas de Produto (KPIs)
+
+## 📊 Engajamento
+
+* Tempo na plataforma
+* Nº de perguntas respondidas
+* Nº de fases concluídas
+
+---
+
+## 📈 Aprendizado
+
+* Taxa de acerto
+* Evolução de nível
+* Retenção por sessão
+
+---
+
+## 🎯 Qualidade
+
+* Assertividade da IA
+* Feedback do usuário
+
+---
+
+# 12. Roadmap de Evolução
+
+## 🔹 Curto prazo
+
+* JSON dinâmico para jogo
+* Persistência de dados
+
+---
+
+## 🔹 Médio prazo
+
+* Login de usuário
+* Dashboard de progresso
+
+---
+
+## 🔹 Longo prazo
+
+* App mobile
+* API backend
+* IA mais robusta
+
+---
+
+# 13. Escalabilidade
+
+## 🚀 Evolução técnica
+
+Atual:
+
+* Local (Streamlit + Ollama)
+
+Futuro:
+
+* Backend (FastAPI)
+* Banco de dados
+* Deploy cloud
+
+---
+
+## 🌍 Possíveis integrações
+
+* Bancos digitais
+* Edtechs
+* Plataformas de investimento
+
+---
+
+# 14. Posicionamento de Mercado
+
+## 🧩 Categoria
+
+* EdTech
+* FinTech
+* AI Learning Platform
+
+---
+
+## 🆚 Concorrência
+
+A BIA se diferencia por:
+
+* IA + Gamificação + Inclusão (os 3 juntos são raros)
+* Aprendizado ativo (não só conteúdo passivo)
+
+---
+
+# 15. Pitch (resumo executivo)
+
+> A BIA Academy Finance é uma plataforma de educação financeira inteligente que utiliza inteligência artificial, gamificação e acessibilidade para transformar o aprendizado em uma experiência prática, personalizada e inclusiva — preparando usuários para tomar decisões financeiras com segurança, sem expô-los a riscos.
+
+---
+
+
