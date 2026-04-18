@@ -1,45 +1,16 @@
 src/
-├── app.py               # Interface principal (Streamlit/Gradio)
-├── api.py               # API local (FastAPI/Flask) para comunicação
-├── agente.py            # Lógica do agente (consultas, quizzes, jogos inclusivos)
-├── config.py            # Configurações gerais (variáveis de ambiente, parâmetros)
-├── prompts.py           # Prompts do agente (system prompt, exemplos, edge cases)
-├── accessibility.py     # Funções de acessibilidade (voz, Libras, contraste)
-├── knowledge_base.py    # Conexão com a base de conhecimento (glossário, quizzes, jogos)
-├── utils/               # Funções auxiliares
-│   ├── data_loader.py   # Carregamento e tratamento dos dados (CSV, JSON, MD)
-│   ├── validators.py    # Validações de entrada e segurança anti-alucinação
-│   └── helpers.py       # Funções genéricas de apoio
-├── models/              # Modelos de IA ou classes
-│   ├── llm_connector.py # Conexão com LLM (local ou API)
-│   └── user_profile.py  # Estrutura de perfil do usuário (investidor iniciante, idoso, etc.)
-└── requirements.txt     # Dependências do projeto
-
-
-
-## Exemplo de requirements.txt
-
-```
-streamlit
-fastapi
-uvicorn
-requests
-pandas
-python-dotenv
-```
-
----
-
-## ⚙️ Como Rodar
-
-```bash
-# Instalar dependências
-pip install -r requirements.txt
-
-# Rodar API local
-uvicorn src.api:app --reload
-
-# Em outro terminal, rodar a interface
-streamlit run src/app.py
-```
-
+├── app.py
+├── api.py
+├── agente.py
+├── config.py
+├── prompts.py
+├── accessibility.py
+├── knowledge_base.py
+├── utils/
+│   ├── data_loader.py
+│   ├── validators.py
+│   └── helpers.py
+├── models/
+│   ├── llm_connector.py
+│   └── user_profile.py
+└── requirements.txt
