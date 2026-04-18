@@ -1,8 +1,26 @@
-streamlit==1.54.0
+# Python >= 3.10
+# =========================================
+# BIA Academy Finance - Dependencies
+# =========================================
 
-# Opcionais (para expansão futura, remova se não for usar agora):
-# fastapi==0.115.0       # Para expor a BIA Academy como API
-# uvicorn==0.30.0        # Servidor ASGI para rodar FastAPI
-# requests==2.32.3       # Para consumir APIs externas (ex.: Banco Central)
-# pandas==2.2.3          # Para manipulação avançada de dados tabulares (CSV, Excel)
-# python-dotenv==1.0.1   # Para carregar variáveis de ambiente de um arquivo .env
+# 🔹 Interface
+streamlit==1.35.0
+
+# 🔹 IA Local
+ollama==0.1.9
+
+# 🔹 NLP / RAG
+sentence-transformers==2.7.0
+transformers==4.41.2
+torch==2.2.2
+
+# 🔹 Machine Learning (similaridade/busca)
+scikit-learn==1.5.0
+
+# 🔹 Dados
+pandas==2.2.2
+numpy==1.26.4
+
+# 🔹 Áudio (Acessibilidade)
+gtts==2.5.1
+pydub==0.25.1
