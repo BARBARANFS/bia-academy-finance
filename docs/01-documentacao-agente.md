@@ -1,9 +1,6 @@
-Perfeito — agora vamos elevar isso para **nível enterprise de verdade**.
-Aqui não é só “bonito pra GitHub”, é documento com visão de **produto, escala e negócio**.
 
----
 
-# 🚀 BIA Academy Finance — Documentação Enterprise
+# 🚀 BIA Academy Finance — Documentação do Agente
 
 ---
 
@@ -397,7 +394,7 @@ A BIA se diferencia por:
 
 ---
 
-# 15. Pitch (resumo executivo)
+# 15. Pitch 
 
 > A BIA Academy Finance é uma plataforma de educação financeira inteligente que utiliza inteligência artificial, gamificação e acessibilidade para transformar o aprendizado em uma experiência prática, personalizada e inclusiva — preparando usuários para tomar decisões financeiras com segurança, sem expô-los a riscos.
 
