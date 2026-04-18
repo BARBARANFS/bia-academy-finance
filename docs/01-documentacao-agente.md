@@ -4,7 +4,7 @@
 
 ---
 
-# 1. Visão do Produto
+# 1. Visão Geral
 
 ## 📌 Descrição
 
