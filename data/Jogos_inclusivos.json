@@ -1,52 +1,68 @@
 [
   {
-    "id": "jogo_001",
-    "publico": "iniciante",
-    "tipo_jogo": "História Interativa + Metáforas",
-    "descricao": "História gamificada para iniciantes.",
-    "contexto": "Maria quer aprender a investir de forma segura e acessível. Ao longo da história, ela enfrenta situações e precisa escolher metáforas que explicam conceitos financeiros.",
-    "resposta_adaptada": "História gamificada com metáforas financeiras, adaptada ao público iniciante.",
-    "formato": "história interativa com escolhas metafóricas",
-    "pontuacao": 50
+    "id": "fase_1",
+    "nivel": "facil",
+    "tema": "Organização Financeira",
+    "pergunta": "Você recebeu seu salário. O que fazer primeiro?",
+    "opcoes": [
+      "Gastar tudo",
+      "Guardar parte",
+      "Ignorar planejamento"
+    ],
+    "resposta_correta": "Guardar parte",
+    "pontos": 20,
+    "explicacao_base": "Guardar parte do que você ganha é o primeiro passo para construir estabilidade financeira.",
+    "adaptacao": {
+      "jovem": "Use linguagem de metas e conquistas.",
+      "idoso": "Comparar com guardar dinheiro em casa para emergências.",
+      "visual": "Descrever como um cofrinho enchendo.",
+      "auditivo": "Texto simples e direto.",
+      "neurodivergente": "Passos curtos e objetivos."
+    },
+    "tags": ["salário", "planejamento", "início"]
   },
   {
-    "id": "jogo_002",
-    "publico": "idoso",
-    "tipo_jogo": "História Interativa + Metáforas",
-    "descricao": "Narrativa simples e pausada para idosos.",
-    "contexto": "Maria busca aprender sobre investimentos com explicações claras e comparações com situações do cotidiano.",
-    "resposta_adaptada": "Narrativa pausada, com metáforas simples e comparações com poupança.",
-    "formato": "história interativa com metáforas cotidianas",
-    "pontuacao": 50
+    "id": "fase_2",
+    "nivel": "medio",
+    "tema": "Diversificação",
+    "pergunta": "Qual estratégia reduz risco?",
+    "opcoes": [
+      "Tudo em 1 investimento",
+      "Diversificar",
+      "Apostar tudo"
+    ],
+    "resposta_correta": "Diversificar",
+    "pontos": 30,
+    "explicacao_base": "Diversificar significa não colocar todo seu dinheiro em um único investimento.",
+    "adaptacao": {
+      "jovem": "Metáfora: não usar só um personagem no jogo.",
+      "idoso": "Comparar com dividir dinheiro em diferentes lugares.",
+      "visual": "Cesta com vários itens.",
+      "auditivo": "Texto simplificado.",
+      "neurodivergente": "Lista clara de opções."
+    },
+    "tags": ["risco", "diversificação"]
   },
   {
-    "id": "jogo_003",
-    "publico": "auditivo",
-    "tipo_jogo": "História Interativa + Metáforas",
-    "descricao": "Versão adaptada para pessoas com deficiência auditiva.",
-    "contexto": "Maria aprende sobre investimentos com apoio visual e linguagem simplificada.",
-    "resposta_adaptada": "Texto simplificado acompanhado de ícones e suporte em Libras.",
-    "formato": "história interativa com apoio visual",
-    "pontuacao": 50
-  },
-  {
-    "id": "jogo_004",
-    "publico": "visual",
-    "tipo_jogo": "História Interativa + Metáforas",
-    "descricao": "Versão adaptada para pessoas com deficiência visual.",
-    "contexto": "Maria aprende sobre investimentos com narrativas em áudio e metáforas fáceis de imaginar.",
-    "resposta_adaptada": "Versão narrada em áudio com metáforas visuais descritas.",
-    "formato": "história interativa narrada",
-    "pontuacao": 50
-  },
-  {
-    "id": "jogo_005",
-    "publico": "neurodivergente",
-    "tipo_jogo": "História Interativa + Metáforas",
-    "descricao": "Narrativa adaptada para neurodivergentes.",
-    "contexto": "Maria aprende sobre investimentos em etapas curtas e previsíveis.",
-    "resposta_adaptada": "Explicações em tópicos claros e diretos, com previsibilidade.",
-    "formato": "história interativa com etapas curtas",
-    "pontuacao": 50
+    "id": "fase_3",
+    "nivel": "dificil",
+    "tema": "Reserva de Emergência",
+    "pergunta": "Qual prioridade financeira?",
+    "opcoes": [
+      "Consumo imediato",
+      "Reserva de emergência",
+      "Evitar planejamento"
+    ],
+    "resposta_correta": "Reserva de emergência",
+    "pontos": 50,
+    "explicacao_base": "A reserva de emergência protege você de imprevistos e evita dívidas.",
+    "adaptacao": {
+      "jovem": "Missão: sobreviver a imprevistos.",
+      "idoso": "Comparar com guardar para saúde ou urgências.",
+      "visual": "Cofre protegido.",
+      "auditivo": "Explicação direta.",
+      "neurodivergente": "Passos previsíveis."
+    },
+    "tags": ["segurança", "reserva"]
   }
 ]
