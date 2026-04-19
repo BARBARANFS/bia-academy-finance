@@ -5,22 +5,30 @@
 </p>
 
 <p align="center">
-  <b>🚀 Educadora Financeira Inclusiva com IA Local</b><br>
-  <i>Transformando educação financeira em uma experiência acessível, segura e inteligente</i>
+  <b>Educadora Financeira Inclusiva com IA Local</b><br>
+  <i>Aplicação de IA Generativa focada em educação financeira acessível, segura e personalizada</i>
 </p>
 
 ---
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=for-the-badge&logo=streamlit)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge\&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=for-the-badge\&logo=streamlit)
 ![AI](https://img.shields.io/badge/AI-Local-green?style=for-the-badge)
 ![RAG](https://img.shields.io/badge/RAG-Enabled-purple?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
 
 </p>
+
+---
+
+## 🎯 Contexto do Projeto
+
+Projeto desenvolvido no **Bootcamp Bradesco - GenAI & Dados** da DIO (Digital Innovation One).
+
+O objetivo é aplicar conceitos de **IA Generativa**, **RAG** e **experiência inclusiva**, construindo um agente funcional com foco em impacto real.
 
 ---
 
@@ -30,107 +38,157 @@
   <img src="assets/demo.gif" alt="Demonstração da BIA Academy" width="800"/>
 </p>
 
-🎧 **Ouça uma resposta da BIA (acessibilidade):**  
-👉 https://BARBARANFS.github.io/bia-academy-finance/
+🎧 **Teste de acessibilidade (áudio):**
+👉 [https://BARBARANFS.github.io/bia-academy-finance/](https://BARBARANFS.github.io/bia-academy-finance/)
 
 ---
 
 ## 📌 Visão Geral
 
-A **BIA Academy Finance** é uma aplicação de Inteligência Artificial focada em **educação financeira inclusiva**, baseada no **Miniguia do Sistema Financeiro Nacional (SFN)** e em um **Glossário de Conceitos**, ambos desenvolvidos previamente pela autora e utilizados como base de dados para o desenvolvimento deste projeto, garantindo consistência, qualidade e confiabilidade das respostas.
+A **BIA Academy Finance** é uma aplicação de IA que atua como uma **educadora financeira inclusiva**, utilizando:
 
-💡 Diferenciais:
-
-- 🧠 IA **100% local (offline)**  
-- 📚 Base de conhecimento própria (`data/`)  
-- 🔎 Sistema **RAG (busca contextual inteligente)**  
-- 🔐 Controle total das respostas  
-- 🔊 Suporte a áudio (acessibilidade)
+* IA **100% local (offline)**
+* Base de conhecimento própria
+* Sistema **RAG (busca contextual)**
+* Adaptação por perfil de usuário
+* Recursos de acessibilidade (áudio)
 
 ---
 
-## ❌ O Problema
+## ❌ Problema
 
-A educação financeira ainda é inacessível para muitas pessoas:
+A educação financeira ainda apresenta barreiras significativas:
 
-- Linguagem técnica complexa  
-- Falta de inclusão  
-- Pouca personalização  
-- Dificuldade para iniciantes  
+* Linguagem excessivamente técnica
+* Falta de acessibilidade
+* Baixa personalização
+* Dificuldade para iniciantes
 
 ---
 
-## ✅ A Solução
+## ✅ Solução
 
-A BIA atua como uma **mentora financeira inteligente e inclusiva**, oferecendo:
+A BIA oferece uma experiência educativa baseada em:
 
-- 💬 Chat educativo com linguagem simples  
-- 🧠 Quizzes com aprendizado ativo  
-- 🎮 Jogos com metáforas financeiras  
-- 🎯 Personalização por perfil  
-- 🔊 Respostas em áudio  
-- 🛡️ Segurança (sem recomendações financeiras)  
+* 💬 Chat inteligente com IA
+* 🧠 Aprendizado ativo via quiz
+* 🎮 Gamificação com jogo evolutivo
+* 🎯 Adaptação por perfil
+* 🔊 Acessibilidade por áudio
+* 🔐 Segurança (sem recomendações financeiras)
 
 ---
 
 ## 👥 Público-Alvo
 
-- 👩‍🎓 Iniciantes em investimentos  
-- 👴 Idosos  
-- 👁️ Pessoas com deficiência visual  
-- 👐 Pessoas com deficiência auditiva  
-- 🧩 Pessoas neurodivergentes  
+* Investidores iniciantes
+* Idosos
+* Pessoas com deficiência visual
+* Pessoas com deficiência auditiva
+* Pessoas neurodivergentes
 
 ---
 
 ## 🧠 Funcionalidades
 
-### 💬 Chat Educacional
-- Respostas baseadas em documentos locais  
-- Uso de RAG para contextualização  
-- Linguagem adaptada ao usuário  
+### 💬 Chat Educacional com IA
+
+* Integração com RAG
+* Respostas contextualizadas
+* Adaptação automática de linguagem
+
+---
+
+### 🧠 Quiz Interativo
+
+* Perguntas com feedback inteligente
+* Explicação gerada por IA
+* Sistema de pontuação
+
+---
+
+### 🎮 Jogo Evolutivo
+
+* Tomada de decisão financeira
+* Progressão por fases
+* Sistema de níveis e conquistas
 
 ---
 
 ### 🔊 Acessibilidade
 
-- 👁️ Deficiência visual → áudio automático (gTTS)  
-- 🧠 Neurodivergentes → respostas estruturadas  
-- 👴 Idosos → linguagem simplificada  
-- 👐 Deficiência auditiva → texto claro  
+* Áudio automático para deficiência visual
+* Linguagem simplificada para idosos
+* Estrutura lógica para neurodivergentes
+* Texto claro para auditivos
 
 ---
 
-### 🧠 Quiz Interativo
-- Perguntas com feedback educativo  
-- Sistema de pontuação  
+## 🏗️ Arquitetura do Sistema
+
+```
+Usuário
+   ↓
+Streamlit (app.py)
+   ↓
+Lógica da BIA
+   ├── Classificação de pergunta
+   ├── Validação de segurança
+   ├── Adaptação por público
+   ↓
+Contexto
+   ├── Base interna (glossário)
+   ├── RAG (FAISS + embeddings)
+   ↓
+LLM Local (Ollama)
+   ↓
+Pós-processamento
+   ↓
+Resposta final + Áudio (opcional)
+```
 
 ---
 
-### 🎮 Jogos Inclusivos
-- Narrativas interativas  
-- Metáforas financeiras  
+## 🧠 Como a IA Funciona
+
+### 🔎 RAG (Retrieval-Augmented Generation)
+
+```
+Pergunta do usuário
+        ↓
+Busca em documentos (data/)
+        ↓
+Geração de contexto
+        ↓
+LLM (Ollama)
+        ↓
+Resposta educativa
+```
 
 ---
 
-### 🏆 Gamificação
-- Pontuação  
-- Níveis (Iniciante → Intermediário → Avançado)  
+## 🔐 Segurança e Ética
+
+* ❌ Não recomenda investimentos
+* ❌ Não realiza previsões financeiras
+* ❌ Não coleta dados do usuário
+* ✅ Base de conhecimento controlada
+* ✅ Respostas educativas e seguras
 
 ---
 
-## 🏗️ Arquitetura
+## 📁 Estrutura do Projeto
 
 ```
 bia-academy-finance/
 │
-├── assets/
-├── data/
-├── docs/               # GitHub Pages (demo de áudio)
+├── assets/        # Diagramas, mockups e imagens
+├── data/          # Base de conhecimento (JSON, TXT)
+├── docs/          # Demo (GitHub Pages)
 │
 ├── src/
-│   ├── app.py
-│   ├── meu_rag.py
+│   ├── app.py     # Interface + lógica principal
+│   ├── meu_rag.py # Sistema de busca semântica
 │
 ├── requirements/
 │   └── requirements.txt
@@ -142,104 +200,84 @@ bia-academy-finance/
 
 ## 🧩 Stack Tecnológica
 
-| Tecnologia | Uso |
-|----------|-----|
-| Python | Backend |
-| Streamlit | Interface |
-| Ollama | IA local |
-| Sentence Transformers | Embeddings |
-| gTTS | Áudio |
-| Pandas / NumPy | Dados |
+| Tecnologia            | Função                |
+| --------------------- | --------------------- |
+| Python                | Base da aplicação     |
+| Streamlit             | Interface             |
+| Ollama                | Execução de LLM local |
+| Sentence Transformers | Embeddings            |
+| FAISS                 | Busca vetorial        |
+| gTTS                  | Geração de áudio      |
+| NumPy                 | Processamento         |
 
 ---
 
-## 🧠 Como a IA Funciona
-
-### 🔹 RAG (Retrieval-Augmented Generation)
-
-```
-Pergunta → Busca em data/ → Contexto → IA → Resposta
-```
-
----
-
-## 🔐 Segurança
-
-- ❌ Não recomenda investimentos  
-- ❌ Não usa APIs externas  
-- ❌ Não coleta dados  
-- ✅ Base local controlada  
-
----
-
-## ⚙️ Como Rodar
+## ⚙️ Como Executar
 
 ```bash
+# Clonar repositório
 git clone https://github.com/BARBARANFS/bia-academy-finance.git
 
 cd bia-academy-finance
 
+# Instalar dependências
 pip install -r requirements/requirements.txt
 
+# Iniciar IA local
 ollama serve
 
+# Rodar aplicação
 streamlit run src/app.py
 ```
 
 ---
 
-## 🎧 Demo de Áudio
+## 📊 Diferenciais do Projeto
 
-Experimente uma resposta real da BIA:
-
-👉 https://BARBARANFS.github.io/bia-academy-finance/
-
----
-
-## 📊 Diferenciais
-
-✨ 100% offline  
-✨ IA local (sem custo)  
-✨ Inclusividade real  
-✨ Suporte a áudio  
-✨ Experiência gamificada  
+* IA 100% local (sem custo)
+* RAG aplicado na prática
+* Inclusão digital real
+* Experiência gamificada
+* Arquitetura modular simples e funcional
 
 ---
 
 ## 🚀 Roadmap
 
-### Curto Prazo
-- [x] Chat com RAG  
-- [x] Base estruturada  
-- [x] Áudio integrado  
+### ✔ Concluído
 
-### Médio Prazo
-- [ ] Melhorias de UX  
-- [ ] Validação anti-alucinação  
+* Chat com RAG
+* Quiz com explicação inteligente
+* Jogo evolutivo
+* Áudio integrado
 
-### Longo Prazo
-- [ ] Assistente por voz completo  
-- [ ] Versão mobile  
-- [ ] API da BIA  
+### 🔜 Evolução futura
+
+* API da BIA
+* Interface mobile
+* Assistente por voz completo
+* Integração com dados reais
 
 ---
 
 ## 👩‍💻 Autora
 
-**Barbara Freitas**  
+**Barbara Freitas**
 
-🎓 Bootcamp Bradesco - DIO  
-🤖 IA Generativa & Dados  
+🎓 Bootcamp Bradesco — GenAI & Dados
+🤖 Foco em IA aplicada, educação e inclusão
 
 ---
 
 ## 📜 Licença
 
-MIT License  
+MIT License
 
 ---
 
 ## 💬 Mensagem Final
 
-> “Educação financeira não deve ser um privilégio —  
-> deve ser acessível, inclusiva e inteligente.”
+> Educação financeira não deve ser um privilégio.
+> Deve ser acessível, inclusiva e baseada em tecnologia responsável.
+
+---
