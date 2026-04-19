@@ -14,7 +14,7 @@ A BIA Academy Finance possui uma identidade visual própria:
 <p align="center">
   <img src="imagens_readme/logo.png" width="180"/>
 </p>
-</p>
+
 
 
 ### 📌 Uso do logo:
