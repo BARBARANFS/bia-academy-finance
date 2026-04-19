@@ -17,11 +17,6 @@
 </p>
 >
 
-<p align="center">
-  <b>Educadora Financeira Inclusiva com IA Local</b><br>
-  <i>Aplicação de IA Generativa focada em educação financeira acessível, segura e personalizada</i>
-</p>
-
 ---
 
 <p align="center">
