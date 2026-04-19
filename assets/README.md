@@ -11,8 +11,9 @@ Ela é responsável por **documentar visualmente o projeto**, apoiar o README pr
 A BIA Academy Finance possui uma identidade visual própria:
 
 <p align="center">
-  <img src="imagens_readme/Logo.png" alt="Logo BIA Academy Finance" width="180"/>
+<img src="_imagens_readme/Logo.png" width="180"/>
 </p>
+
 
 ### 📌 Uso do logo:
 
