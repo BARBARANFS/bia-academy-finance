@@ -26,27 +26,24 @@ A BIA Academy Finance possui uma identidade visual própria:
 
 ---
 
-# 🧩 1. Estrutura da Pasta
+## 🧩 Estrutura da Pasta
 
-```
 assets/
 ├── diagramas/
 │   └── arquitetura.md
-│
 ├── screenshots/
 │   ├── chat_tela.png
 │   ├── quiz_tela.png
-│   └── jogo_tela.png
-│
+│   ├── jogo_tela.png
+│   └── api_endpoint.png
 ├── mockups/
 │   ├── quiz_mockup.md
 │   └── jogo_mockup.md
-│
 └── imagens_readme/
     ├── fluxo.png
-    ├── inclusao.png
-    └── logo.png
-```
+    └── inclusao.png
+
+
 
 ---
 
