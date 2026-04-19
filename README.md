@@ -1,7 +1,7 @@
 # 💡 BIA Academy Finance
 
 <p align="center">
-  <img src="assets/logo.png" alt="BIA Academy Logo" width="200"/>
+  <img src="assets/imagens_readme/logo.png" width="200"/>
 </p>
 
 <p align="center">
