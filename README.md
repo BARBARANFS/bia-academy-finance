@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="assets/imagens_readme/Logo.png" alt="BIA Academy Logo" width="200"/>
+  <img src="_imagens_readme/Logo.png" width="180"/>
 </p>
 
 
