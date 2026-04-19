@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="assets/imagens_readme/logo.png" width="200"/>
+ <img src="https://raw.githubusercontent.com/BARBARANFS/bia-academy-finance/main/assets/imagens_readme/logo.png" width="200"/>
 </p>
 
 
