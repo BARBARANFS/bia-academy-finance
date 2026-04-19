@@ -1,33 +1,55 @@
 # 📁 Assets — BIA Academy Finance
 
-Esta pasta contém os recursos visuais, diagramas e representações do funcionamento do sistema BIA Academy Finance.
+Esta pasta reúne os **recursos visuais, identidade visual e diagramas do sistema BIA Academy Finance**.
 
-Seu objetivo é documentar de forma clara a arquitetura, o fluxo e a experiência do usuário, alinhados com a implementação real do projeto.
+Ela é responsável por **documentar visualmente o projeto**, apoiar o README principal e reforçar a identidade da solução.
+
+---
+
+# 🎨 0. Identidade Visual (Logo)
+
+A BIA Academy Finance possui uma identidade visual própria:
+
+<p align="center">
+  <img src="imagens_readme/logo.png" alt="Logo BIA Academy Finance" width="180"/>
+</p>
+
+### 📌 Uso do logo:
+
+* README principal
+* Apresentações (pitch)
+* GitHub Pages
+* Documentação
 
 ---
 
 # 🧩 1. Estrutura da Pasta
 
+```
 assets/
 ├── diagramas/
-│   └── arquitetura.md        # Arquitetura real do sistema
+│   └── arquitetura.md
+│
 ├── screenshots/
-│   ├── chat_tela.png         # Tela do chat funcionando
-│   ├── quiz_tela.png         # Tela do quiz
-│   └── jogo_tela.png         # Tela do jogo evolutivo
+│   ├── chat_tela.png
+│   ├── quiz_tela.png
+│   └── jogo_tela.png
+│
 ├── mockups/
-│   ├── quiz_mockup.md        # Representação simplificada do quiz
-│   └── jogo_mockup.md        # Representação do jogo evolutivo
+│   ├── quiz_mockup.md
+│   └── jogo_mockup.md
+│
 └── imagens_readme/
-    ├── fluxo.png             # Fluxo geral do sistema
-    └── inclusao.png          # Públicos atendidos
+    ├── fluxo.png
+    ├── inclusao.png
+    └── logo.png
+```
 
 ---
 
 # 🧠 2. Arquitetura do Sistema (BIA REAL)
 
-A arquitetura da BIA Academy Finance é local, modular e orientada à educação financeira inclusiva.
-
+```
 +---------+
 | Usuário |
 +---------+
@@ -59,166 +81,142 @@ A arquitetura da BIA Academy Finance é local, modular e orientada à educação
 +---------------------------+
 | Acessibilidade (Áudio)    |
 +---------------------------+
+```
 
 ---
 
-# 🔄 3. Fluxo de Funcionamento
-
-O sistema é dividido em três módulos principais escolhidos diretamente pelo usuário:
+# 🔄 3. Fluxo do Sistema
 
 Usuário
-   ↓
-Interface (Streamlit - app.py)
-   ↓
-Seleção de módulo
+↓
+Interface (Streamlit)
+↓
+Escolha da funcionalidade
 
-├── 💬 Chat Educacional
-│   → Pergunta do usuário
-│   → Classificação de intenção
-│   → Busca de contexto (Glossário + RAG)
-│   → Geração de resposta (LLM)
-│   → Adaptação por público
-│   → (Opcional) Geração de áudio
-│
-├── 🧠 Quiz Educativo
-│   → Pergunta estruturada (JSON)
-│   → Resposta do usuário
-│   → Validação da resposta
-│   → Pontuação (+10)
-│   → Atualização de nível
-│   → Explicação com IA + RAG
-│
-└── 🎮 Jogo Evolutivo
-    → Sistema de fases progressivas
-    → Escolha do usuário
-    → Feedback imediato
-    → Pontuação variável (20 / 30 / 50)
-    → Progressão de nível
-    → Sistema de conquistas
-    → Ranking final
+### 💬 Chat
+
+Pergunta → RAG + Base interna → LLM → Resposta adaptada → (Áudio opcional)
+
+### 🧠 Quiz
+
+Pergunta → Resposta → Validação → Pontuação → Explicação com IA
+
+### 🎮 Jogo
+
+Fases → Decisão → Feedback → Pontuação → Nível → Conquistas
 
 ---
 
-# 🎯 4. Conceitos-Chave do Sistema
+# 🎯 4. Conceitos-Chave
 
-## 🔹 Escolha do Usuário
-O usuário decide qual experiência utilizar:
-- Chat
-- Quiz
-- Jogo
+### ✔ Educação, não recomendação
 
-## 🔹 Adaptação por Público
-A Bia adapta a comunicação conforme o perfil selecionado:
-- Investidor iniciante
-- Idoso
-- Deficiência auditiva
-- Deficiência visual
-- Neurodivergente
+A BIA ensina, mas não recomenda investimentos.
 
-## 🔹 Educação, não recomendação
-O sistema:
-- Explica conceitos financeiros
-- Usa exemplos práticos
-- NÃO recomenda investimentos
+### ✔ Adaptação por público
 
-## 🔹 Segurança
-- Bloqueio de recomendações
-- Respostas baseadas em contexto (RAG + base interna)
-- Controle de linguagem
+* Iniciante
+* Idoso
+* Deficiência visual
+* Deficiência auditiva
+* Neurodivergente
+
+### ✔ Segurança
+
+* Bloqueio de recomendações
+* Respostas controladas
+* Base confiável
 
 ---
 
 # 🧠 5. Mockup — Quiz
 
+```
 | BIA Academy Finance |
 
 Pergunta: Qual investimento tem maior liquidez?
 
-( ) Tesouro Selic  
-( ) LCI com carência  
-( ) Ações  
+( ) Tesouro Selic
+( ) LCI com carência
+( ) Ações
 
 [Responder]
 
 💡 Feedback:
 "O Tesouro Selic pode ser resgatado a qualquer momento."
 
-🏆 Pontuação: +10  
-📊 Nível: atualizado automaticamente
+🏆 +10 pontos
+```
 
 ---
 
-# 🎮 6. Mockup — Jogo Evolutivo
+# 🎮 6. Mockup — Jogo
 
+```
 | BIA Academy Finance |
 
-🧩 Fase 1  
-Você recebeu seu salário. O que fazer primeiro?
+🧩 Fase 1
+Você recebeu seu salário. O que fazer?
 
-( ) Gastar tudo  
-( ) Guardar parte  
-( ) Ignorar planejamento  
+( ) Gastar tudo
+( ) Guardar parte
+( ) Ignorar planejamento
 
 [Responder]
 
-💡 Feedback:
-"Guardar cria base financeira."
+💡 "Guardar cria base financeira."
 
-🏆 Pontuação: +20  
-📊 Nível: Iniciante → Intermediário  
+🏆 +20 pontos
+```
 
 ---
 
-# 🧠 7. Lógica de Progressão
+# 🧠 7. Progressão
 
-## Pontuação
-- Quiz: +10 por acerto
-- Jogo: +20 / +30 / +50 por fase
+Pontuação:
 
-## Níveis
-- 0 a 49 → Iniciante  
-- 50 a 99 → Intermediário  
-- 100+ → Avançado  
+* Quiz → +10
+* Jogo → +20 / +30 / +50
 
-## Conquistas
-- 🎯 Primeira conquista → 20 pontos  
-- 🏆 100 pontos → 100 pontos  
-- 🚀 Jornada completa → finalizar fases  
+Níveis:
 
-## Ranking
-- Top 5 jogadores
-- Ordenado por pontuação
+* 0–49 → Iniciante
+* 50–99 → Intermediário
+* 100+ → Avançado
 
 ---
 
 # 🎧 8. Acessibilidade
 
-A BIA Academy Finance possui recursos de inclusão:
-
-- 🔊 Áudio automático (para deficiência visual)
-- 🧠 Respostas estruturadas (neurodivergentes)
-- 👂 Texto simplificado (deficiência auditiva)
-- 👵 Linguagem adaptada (idosos)
+* 🔊 Áudio automático
+* 🧠 Estrutura para neurodivergentes
+* 👂 Texto claro
+* 👵 Linguagem adaptada
 
 ---
 
 # 📸 9. Screenshots
 
-As imagens desta pasta representam a interface real do sistema:
-
-- chat_tela.png → Conversa com IA
-- quiz_tela.png → Sistema de perguntas
-- jogo_tela.png → Jornada evolutiva
+* chat_tela.png
+* quiz_tela.png
+* jogo_tela.png
 
 ---
 
-# 🧭 10. Considerações Finais
+# 🧭 10. Papel da Pasta Assets
 
-A pasta `assets` não contém lógica de código.
+A pasta **não contém código**, apenas:
 
-Seu papel é:
-- Documentar visualmente o sistema
-- Facilitar entendimento do projeto
-- Apoiar apresentações e validações
+* Documentação visual
+* Apoio ao README
+* Material para apresentação
 
-Toda a lógica funcional está na pasta `src/`.
+---
+
+# 🚀 11. Observação Final
+
+A estrutura está **alinhada com o código real (`src/app.py`)**, garantindo:
+
+* Coerência técnica
+* Clareza para avaliadores
+* Nível profissional (bootcamp + mercado)
