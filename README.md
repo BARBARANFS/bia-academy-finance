@@ -40,7 +40,7 @@ A solução foi projetada para evoluir continuamente, com o objetivo de expandir
 
 ## 🎯 Contexto
 
-Projeto desenvolvido no **Bootcamp Bradesco — GenAI & Análise de Dados (DIO)**, com foco na aplicação prática de:
+Projeto desenvolvido no **Bootcamp Bradesco — GenAI & Dados (DIO)**, com foco na aplicação prática de:
 
 * IA Generativa
 * RAG (Retrieval-Augmented Generation)
@@ -48,6 +48,7 @@ Projeto desenvolvido no **Bootcamp Bradesco — GenAI & Análise de Dados (DIO)*
 * Experiência inclusiva
 
 O projeto demonstra como **dados + IA** podem ser utilizados para construir soluções com impacto real.
+A Base de conhecimento é própria, e foi estruturada a partir dos arquivos *Miniguia_SFN_Investimentos.md* e *Glossário de Conceitos.md*, de forma a garantir maior precisão, contextualização e qualidade nas respostas da IA.
 
 ---
 
