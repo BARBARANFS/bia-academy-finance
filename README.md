@@ -20,7 +20,7 @@ Atualmente, a **BIA Academy Finance** oferece **respostas em áudio automáticas
 A solução foi projetada para evoluir continuamente, com o objetivo de expandir os recursos de acessibilidade para outros públicos, como idosos, pessoas com baixa alfabetização e usuários neurodivergentes.
 
 🎧 Teste a demonstração:  
-https://BARBARANFS.github.io/bia-academy-finance/
+[https://BARBARANFS.github.io/bia-academy-finance/](https://drive.google.com/file/d/12h7JHKgk_999kjLhPcJcPe2MKd_60l71/view?usp=sharing)
 
 ---
 
